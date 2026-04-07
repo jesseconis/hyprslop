@@ -42,3 +42,28 @@ declare module "*.css" {
   const content: string
   export default content
 }
+
+declare module "unicode-emoji-json/data-by-emoji.json" {
+  export interface UnicodeEmojiMetadata {
+    name: string
+    slug: string
+    group: string
+    emoji_version: string
+    unicode_version: string
+    skin_tone_support: boolean
+    skin_tone_support_unicode_version?: string
+  }
+
+  const content: Record<string, UnicodeEmojiMetadata>
+  export default content
+}
+
+declare module "emojilib/dist/emoji-en-US.json" {
+  const content: Record<string, string[]>
+  export default content
+}
+
+declare module "unicode-emoji-json/data-ordered-emoji.json" {
+  const content: string[]
+  export default content
+}

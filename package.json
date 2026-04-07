@@ -1,10 +1,23 @@
 {
+  "scripts": {
+    "benchmark:compare": "./scripts/compare-bars.sh",
+    "benchmark:sample": "./scripts/profile-process.sh",
+    "benchmark:interactions": "./scripts/hypr-workspace-stress.sh",
+    "benchmark:emoji-startup": "./scripts/benchmark-emoji-picker-startup.sh",
+    "typecheck": "tsc --noEmit",
+    "clean:tsc": "find . -type f -name '*.js' ! -path './node_modules/*' ! -path './.git/*' ! -name 'hyprbar-bundle.js' ! -name 'hyprslop-emoji-bundle.js' -delete"
+  },
   "dependencies": {
     "ags": "*",
-    "gnim": "*"
+    "emojilib": "^4.0.2",
+    "gnim": "*",
+    "unicode-emoji-json": "^0.8.0"
   },
   "prettier": {
     "semi": false,
     "tabWidth": 2
+  },
+  "devDependencies": {
+    "typescript": "^6.0.2"
   }
 }
