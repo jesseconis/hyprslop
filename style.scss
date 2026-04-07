@@ -142,3 +142,173 @@ window.Bar {
     inset 0 0 0 1px rgba(255, 61, 129, 0.18),
     0 0 16px rgba(255, 61, 129, 0.16);
 }
+
+.popup-backdrop {
+  background:
+    radial-gradient(circle at top, rgba(62, 247, 255, 0.08), transparent 36%),
+    rgba(5, 9, 18, 0.84);
+  padding: 32px;
+}
+
+.popup-surface {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(9, 16, 29, 0.92)),
+    $panel;
+  border: 1px solid rgba(62, 247, 255, 0.34);
+  border-radius: 28px;
+  box-shadow:
+    0 18px 48px rgba(0, 0, 0, 0.34),
+    0 0 0 1px rgba(255, 61, 129, 0.14),
+    0 0 32px rgba(62, 247, 255, 0.1);
+  color: #f8fbff;
+  padding: 24px;
+}
+
+.popup-header {
+  margin-bottom: 18px;
+}
+
+.popup-header-copy {
+  border-spacing: 4px;
+}
+
+.popup-title {
+  color: #f8fbff;
+  font-size: 24px;
+}
+
+.popup-subtitle {
+  color: rgba(248, 251, 255, 0.66);
+  font-size: 13px;
+}
+
+.popup-search {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(62, 247, 255, 0.22);
+  border-radius: 14px;
+  box-shadow: none;
+  color: #f8fbff;
+  margin-bottom: 14px;
+  padding: 10px 14px;
+}
+
+.popup-search:focus {
+  border-color: rgba(255, 61, 129, 0.52);
+  box-shadow: 0 0 0 2px rgba(255, 61, 129, 0.14);
+}
+
+.power-menu-button {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(62, 247, 255, 0.18);
+  border-radius: 18px;
+  min-width: 116px;
+  min-height: 132px;
+  padding: 18px 14px;
+}
+
+.power-menu-button.focus,
+.power-menu-button:hover {
+  background: rgba(255, 61, 129, 0.12);
+  border-color: rgba(255, 61, 129, 0.48);
+  box-shadow: 0 0 18px rgba(255, 61, 129, 0.16);
+}
+
+.power-menu-button-icon {
+  color: $cyan;
+  margin-bottom: 10px;
+}
+
+.emoji-picker-surface {
+  min-width: 920px;
+}
+
+.emoji-meta-row {
+  margin-bottom: 12px;
+}
+
+.emoji-results-count {
+  color: rgba(248, 251, 255, 0.68);
+  font-size: 12px;
+}
+
+.emoji-picker-content {
+  border-spacing: 18px;
+}
+
+.emoji-scroll {
+  background: transparent;
+}
+
+.emoji-sections,
+.emoji-section {
+  border-spacing: 8px;
+}
+
+.emoji-section-title {
+  color: $cyan;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.emoji-grid {
+  border-spacing: 6px;
+}
+
+.emoji-grid-row {
+  border-spacing: 6px;
+}
+
+.emoji-chip {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(62, 247, 255, 0.14);
+  border-radius: 14px;
+  box-shadow: none;
+  min-width: 78px;
+  min-height: 72px;
+  padding: 8px 6px;
+}
+
+.emoji-chip:hover,
+.emoji-chip-focused {
+  background: rgba(255, 61, 129, 0.12);
+  border-color: rgba(255, 61, 129, 0.46);
+  box-shadow: 0 0 18px rgba(255, 61, 129, 0.14);
+}
+
+.emoji-chip-copy {
+  border-spacing: 4px;
+}
+
+.emoji-chip-glyph {
+  font-size: 28px;
+}
+
+.emoji-chip-name {
+  color: rgba(248, 251, 255, 0.72);
+  font-size: 10px;
+}
+
+.emoji-empty-state {
+  border-spacing: 4px;
+  margin-top: 20px;
+}
+
+.emoji-empty-title {
+  color: #f8fbff;
+  font-size: 14px;
+}
+
+.emoji-empty-copy {
+  color: rgba(248, 251, 255, 0.66);
+  font-size: 12px;
+}
+
+.emoji-load-more {
+  margin: 12px 0 4px;
+}
+
+.emoji-load-more-copy {
+  color: rgba(62, 247, 255, 0.72);
+  font-size: 11px;
+}
